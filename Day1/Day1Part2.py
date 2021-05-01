@@ -1,10 +1,11 @@
+#Opening, reading file and closing file
 def readFile(fileName):
     inputFile = open(fileName, 'r')
     inputNumbers = inputFile.read().splitlines()
     inputFile.close()
     return inputNumbers
 
-numbersArray = readFile("input.txt")
+numbersArray = readFile("input.txt")    #insert your input data file
 for x in range(len(numbersArray)):
     for y in range(len(numbersArray)):
         for z in range(len(numbersArray)):

@@ -1,3 +1,4 @@
+#Opening and reading file
 def readFile(fileName):
     inputFile = open(fileName, 'r')
     inputNumbers = inputFile.read().splitlines()
@@ -5,7 +6,7 @@ def readFile(fileName):
     return inputNumbers
 
 def findAns():
-    numbersArray = readFile("input.txt")
+    numbersArray = readFile("input.txt")    #replace with your file with data
     for y in range(len(numbersArray)):
         for x in range(len(numbersArray)):
             firstNum = numbersArray[x]
